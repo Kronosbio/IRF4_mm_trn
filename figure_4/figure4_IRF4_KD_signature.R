@@ -100,9 +100,7 @@ MM1S_sgIRF4_DE$comb <- paste(MM1S_sgIRF4_DE$Symbol, MM1S_sgIRF4_DE$Type)
 ### Removing 3 genes that were not consistent in direction.
 MM1S_sgIRF4_DE <- MM1S_sgIRF4_DE %>% filter(Symbol %!in% c("ARHGEF3", "CDKN1A", "RHOB")) %>% dplyr::select(Symbol, Type) %>% unique()
 
-MM1S_KB528 <- read.delim(
-  "../RNA_data/KB528_time_series/KB528_MM1S_analysis_DMSO_MM1S_vs_KB528_24_MM1S_exprs_matrix.txt"
-)
+MM1S_KB528 <- read.delim("../RNA_data/MM1S_SOC/MM1S_SOC_analysis_KB528_0_vs_KB528_24_exprs_matrix.txt")
 
 RPMI8226_KB528 <- read.delim(
   "../RNA_data/KB528_time_series/KB528_RPMI8226_analysis_DMSO_RPMI8226_vs_KB528_24Hr_RPMI8226_exprs_matrix.txt"
@@ -182,9 +180,8 @@ MM1S_sgIRF4_DE <- MM1S_sgIRF4_DE %>% filter(Symbol %!in% c("ARHGEF3", "CDKN1A", 
 
 ###write_csv(MM1S_sgIRF4_DE,"./Fedele_et_al_2021_MM1S_sgIRF4_DE.csv")
 
-MM1S_KB528 <- read.delim(
-  "../RNA_data/KB528_time_series/KB528_MM1S_analysis_DMSO_MM1S_vs_KB528_24_MM1S_exprs_matrix.txt"
-)
+MM1S_KB528 <- read.delim("../RNA_data/MM1S_SOC/MM1S_SOC_analysis_KB528_0_vs_KB528_24_exprs_matrix.txt")
+
 MM1S_KB528$GENE <- row.names(MM1S_KB528)
 
 colnames(MM1S_KB528)[3:4] <- c("Log2FC_KB528_24", "p_KB528_24")
@@ -202,29 +199,31 @@ dat$alpha_[dat$GENE %in% (MM1S_sgIRF4_DE %>% filter(Type == "up") %>% pull(Symbo
 dat_t <- dat %>% filter(type != "Other")
 cor.test(dat_t$Log2FC_MM1S_siIRF4, dat_t$Log2FC_KB528_24)
 
+# > cor.test(dat_t$Log2FC_MM1S_siIRF4, dat_t$Log2FC_KB528_24)
+# 
 # Pearson's product-moment correlation
 # 
 # data:  dat_t$Log2FC_MM1S_siIRF4 and dat_t$Log2FC_KB528_24
-# t = 15.775, df = 67, p-value < 2.2e-16
+# t = 9.8657, df = 67, p-value = 1.105e-14
 # alternative hypothesis: true correlation is not equal to 0
 # 95 percent confidence interval:
-#  0.8240605 0.9291110
+#  0.6516158 0.8512326
 # sample estimates:
 #       cor 
-# 0.8876204 
+# 0.7696044 
 
 cor.test(dat$Log2FC_MM1S_siIRF4, dat$Log2FC_KB528_24)
 
 # Pearson's product-moment correlation
 # 
 # data:  dat$Log2FC_MM1S_siIRF4 and dat$Log2FC_KB528_24
-# t = 79.159, df = 11402, p-value < 2.2e-16
+# t = 49.137, df = 11473, p-value < 2.2e-16
 # alternative hypothesis: true correlation is not equal to 0
 # 95 percent confidence interval:
-#  0.5835577 0.6072495
+#  0.4017291 0.4319627
 # sample estimates:
 #       cor 
-# 0.5955331 
+# 0.4169612 
 
 plot1 <- dat %>% ggplot(aes(y = Log2FC_KB528_24, x = Log2FC_MM1S_siIRF4)) +
   geom_point(alpha = 0.6, aes(color = type, size = 2)) +
