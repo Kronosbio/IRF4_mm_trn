@@ -1,0 +1,7 @@
+Sample,desc,Further.Info,Treatment,rep,Time
+MS3,Pellet CD138+ p#18 control (12h),CD138+  of Pt#18,ctrl,2,12
+MS4,Pellet CD138+ p#18 + 1µM of KB-00284450 (12h),CD138+  of Pt#18,KB528,2,12
+MS5,Pellet KK1 control (12h),CD138+  of Pt#22,ctrl,3,12
+MS6,Pellet KK1  1µM of KB-00284450 (12h),CD138+  of Pt#22,KB528,3,12
+MS9,Pellet CD138+ cells pt#32 control (12h),CD138+ of Pt#32,ctrl,4,12
+MS10,Pellet CD138+ cells pt#32+ 1µM of KB-00284450 (12h),CD138+ of Pt#32,KB528,4,12
