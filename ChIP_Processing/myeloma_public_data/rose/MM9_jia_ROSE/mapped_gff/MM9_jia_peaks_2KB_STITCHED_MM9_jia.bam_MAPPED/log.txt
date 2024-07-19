@@ -1,0 +1,7 @@
+2024-07-16 18:18:16 INFO	Starting bamliquidator_batch 1.4.0 with args {'bin_size': 100000, 'regions_file': '/data/projects/IRF4_mm_trn_data/myeloma_public_data/rose/MM9_jia_ROSE/gff/MM9_jia_peaks_2KB_STITCHED.gff', 'output_directory': '/data/projects/IRF4_mm_trn_data/myeloma_public_data/rose/MM9_jia_ROSE/mapped_gff/MM9_jia_peaks_2KB_STITCHED_MM9_jia.bam_MAPPED', 'counts_file': None, 'flatten': False, 'extension': 200, 'sense': '.', 'match_bamToGFF': True, 'region_format': None, 'skip_plot': False, 'black_list': ['chrUn', '_random', 'Zv9_', '_hap'], 'quiet': False, 'number_of_threads': 0, 'xml_timings': False, 'bam_file_path': '/data/projects/MM_TRN/bam_files/MM9_jia.bam'}
+2024-07-16 18:18:16 INFO	Liquidating /data/projects/MM_TRN/bam_files/MM9_jia.bam (file 1 of 1)
+2024-07-16 18:18:45 INFO	Liquidation completed: 28.999021 seconds
+2024-07-16 18:18:45 INFO	Normalizing
+2024-07-16 18:18:45 INFO	Post liquidation processing took 0.147809 seconds
+2024-07-16 18:18:45 INFO	Writing bamToGff style matrix.txt file
+2024-07-16 18:18:46 INFO	Writing matrix.txt took 0.106639 seconds

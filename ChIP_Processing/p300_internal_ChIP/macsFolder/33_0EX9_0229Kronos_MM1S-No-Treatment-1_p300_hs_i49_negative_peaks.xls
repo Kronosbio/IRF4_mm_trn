@@ -1,0 +1,3 @@
+chr	start	end	length	summit	tags	-10*log10(pvalue)	fold_enrichment
+chr2	91606442	91615481	9040	6449	1381	97.16	5.54
+chr2	91737367	91740174	2808	997	229	106.41	5.16

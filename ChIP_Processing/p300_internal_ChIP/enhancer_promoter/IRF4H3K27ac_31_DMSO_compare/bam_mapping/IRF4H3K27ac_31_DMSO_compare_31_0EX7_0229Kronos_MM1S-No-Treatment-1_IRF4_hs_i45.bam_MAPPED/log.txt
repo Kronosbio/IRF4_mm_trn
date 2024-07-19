@@ -1,0 +1,7 @@
+2024-07-18 16:59:42 INFO	Starting bamliquidator_batch 1.4.0 with args {'bin_size': 100000, 'regions_file': '/data/projects/IRF4_mm_trn_data/p300_internal_ChIP/enhancer_promoter/IRF4H3K27ac_31_DMSO_compare/IRF4H3K27ac_31_DMSO_compare_SPLIT.gff', 'output_directory': '/data/projects/IRF4_mm_trn_data/p300_internal_ChIP/enhancer_promoter/IRF4H3K27ac_31_DMSO_compare/bam_mapping/IRF4H3K27ac_31_DMSO_compare_31_0EX7_0229Kronos_MM1S-No-Treatment-1_IRF4_hs_i45.bam_MAPPED', 'counts_file': None, 'flatten': False, 'extension': 200, 'sense': '.', 'match_bamToGFF': True, 'region_format': None, 'skip_plot': False, 'black_list': ['chrUn', '_random', 'Zv9_', '_hap'], 'quiet': False, 'number_of_threads': 0, 'xml_timings': False, 'bam_file_path': '/data/projects/p300_internal_mm/31_0EX7_0229Kronos_MM1S-No-Treatment-1_IRF4_hs_i45.bam'}
+2024-07-18 16:59:42 INFO	Liquidating /data/projects/p300_internal_mm/31_0EX7_0229Kronos_MM1S-No-Treatment-1_IRF4_hs_i45.bam (file 1 of 1)
+2024-07-18 17:00:06 INFO	Liquidation completed: 23.751050 seconds
+2024-07-18 17:00:06 INFO	Normalizing
+2024-07-18 17:00:06 INFO	Post liquidation processing took 0.263351 seconds
+2024-07-18 17:00:06 INFO	Writing bamToGff style matrix.txt file
+2024-07-18 17:00:06 INFO	Writing matrix.txt took 0.177299 seconds

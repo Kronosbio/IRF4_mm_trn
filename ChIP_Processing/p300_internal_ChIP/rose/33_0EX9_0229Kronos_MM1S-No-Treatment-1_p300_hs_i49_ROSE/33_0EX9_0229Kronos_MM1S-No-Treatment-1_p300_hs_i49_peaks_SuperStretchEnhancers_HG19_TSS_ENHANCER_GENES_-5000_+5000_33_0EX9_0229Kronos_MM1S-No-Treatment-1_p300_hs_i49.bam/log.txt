@@ -1,0 +1,49 @@
+2024-07-18 15:01:43 INFO	Starting bamliquidator_batch 1.4.0 with args {'bin_size': 100000, 'regions_file': '/data/projects/IRF4_mm_trn_data/p300_internal_ChIP/rose/33_0EX9_0229Kronos_MM1S-No-Treatment-1_p300_hs_i49_ROSE/33_0EX9_0229Kronos_MM1S-No-Treatment-1_p300_hs_i49_peaks_SuperStretchEnhancers_HG19_TSS_ENHANCER_GENES_-5000_+5000.gff', 'output_directory': '/data/projects/IRF4_mm_trn_data/p300_internal_ChIP/rose/33_0EX9_0229Kronos_MM1S-No-Treatment-1_p300_hs_i49_ROSE/33_0EX9_0229Kronos_MM1S-No-Treatment-1_p300_hs_i49_peaks_SuperStretchEnhancers_HG19_TSS_ENHANCER_GENES_-5000_+5000_33_0EX9_0229Kronos_MM1S-No-Treatment-1_p300_hs_i49.bam', 'counts_file': None, 'flatten': False, 'extension': 200, 'sense': '.', 'match_bamToGFF': True, 'region_format': None, 'skip_plot': False, 'black_list': ['chrUn', '_random', 'Zv9_', '_hap'], 'quiet': False, 'number_of_threads': 0, 'xml_timings': False, 'bam_file_path': '/data/projects/p300_internal_mm/33_0EX9_0229Kronos_MM1S-No-Treatment-1_p300_hs_i49.bam'}
+2024-07-18 15:01:43 INFO	Liquidating /data/projects/p300_internal_mm/33_0EX9_0229Kronos_MM1S-No-Treatment-1_p300_hs_i49.bam (file 1 of 1)
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 653: bam file key 1 chr6_apd_hap1 NM_002118 4184389 -> 4200831 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 654: bam file key 1 chr6_apd_hap1 NM_006120 4198376 -> 4212888 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 655: bam file key 1 chr6_cox_hap2 NM_002119 4411456 -> 4426886 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 656: bam file key 1 chr6_cox_hap2 NM_002118 4341929 -> 4358371 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 657: bam file key 1 chr6_cox_hap2 NM_006120 4355916 -> 4370428 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 658: bam file key 1 chr6_cox_hap2 NM_005104 4375974 -> 4398826 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 659: bam file key 1 chr6_cox_hap2 NM_001113182 4378202 -> 4398826 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 660: bam file key 1 chr6_cox_hap2 NM_001199455 4378909 -> 4398826 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 661: bam file key 1 chr6_cox_hap2 NM_001199456 4380398 -> 4398826 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 662: bam file key 1 chr6_dbb_hap3 NM_002118 4178742 -> 4195184 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 663: bam file key 1 chr6_dbb_hap3 NM_006120 4192728 -> 4207240 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 664: bam file key 1 chr6_dbb_hap3 NM_002119 4248308 -> 4263737 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 665: bam file key 1 chr6_dbb_hap3 NM_005104 4221964 -> 4235624 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 666: bam file key 1 chr6_mcf_hap5 NM_002119 4303821 -> 4319252 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 667: bam file key 1 chr6_mcf_hap5 NM_002118 4234256 -> 4250698 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 668: bam file key 1 chr6_mcf_hap5 NM_006120 4248243 -> 4262755 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 669: bam file key 1 chr6_mcf_hap5 NM_005104 4268301 -> 4288033 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 670: bam file key 1 chr6_mcf_hap5 NM_001113182 4270529 -> 4288033 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 671: bam file key 1 chr6_mcf_hap5 NM_001199455 4271236 -> 4288842 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 672: bam file key 1 chr6_mcf_hap5 NM_001199456 4272725 -> 4288033 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 673: bam file key 1 chr6_qbl_hap6 NM_005104 4163580 -> 4186419 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 674: bam file key 1 chr6_qbl_hap6 NM_002118 4129532 -> 4145973 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 675: bam file key 1 chr6_qbl_hap6 NM_006120 4143516 -> 4158028 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 676: bam file key 1 chr6_qbl_hap6 NM_001113182 4165808 -> 4186419 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 677: bam file key 1 chr6_qbl_hap6 NM_001199455 4166515 -> 4186419 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 678: bam file key 1 chr6_qbl_hap6 NM_001199456 4168004 -> 4186419 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 679: bam file key 1 chr6_qbl_hap6 NM_002119 4199052 -> 4214482 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 680: bam file key 1 chr6_mann_hap4 NM_002119 4424150 -> 4439580 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 681: bam file key 1 chr6_mann_hap4 NM_002118 4354616 -> 4371058 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 682: bam file key 1 chr6_mann_hap4 NM_006120 4368601 -> 4383111 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 683: bam file key 1 chr6_mann_hap4 NM_005104 4388663 -> 4411503 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 684: bam file key 1 chr6_mann_hap4 NM_001113182 4390891 -> 4411503 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 685: bam file key 1 chr6_mann_hap4 NM_001199455 4391598 -> 4411503 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 686: bam file key 1 chr6_mann_hap4 NM_001199456 4393087 -> 4411503 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 687: bam file key 1 chr6_ssto_hap7 NM_002119 4447675 -> 4463104 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 688: bam file key 1 chr6_ssto_hap7 NM_002118 4328159 -> 4344601 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 689: bam file key 1 chr6_ssto_hap7 NM_006120 4342146 -> 4356658 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 690: bam file key 1 chr6_ssto_hap7 NM_005104 4362204 -> 4435060 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 691: bam file key 1 chr6_ssto_hap7 NM_001113182 4364432 -> 4435060 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 692: bam file key 1 chr6_ssto_hap7 NM_001199455 4365139 -> 4435060 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 693: bam file key 1 chr6_ssto_hap7 NM_001199456 4416632 -> 4435060 . 0
+2024-07-18 15:01:43 WARNING	Excluding invalid region on line 694: bam file key 1 chr4_gl000194_random NM_001033515 48593 -> 120055 . 0
+2024-07-18 15:01:44 INFO	Liquidation completed: 0.354091 seconds
+2024-07-18 15:01:44 INFO	Normalizing
+2024-07-18 15:01:44 INFO	Post liquidation processing took 0.013927 seconds
+2024-07-18 15:01:44 INFO	Writing bamToGff style matrix.txt file
+2024-07-18 15:01:44 INFO	Writing matrix.txt took 0.010309 seconds

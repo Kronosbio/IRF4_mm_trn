@@ -1,0 +1,7 @@
+2024-07-17 20:00:59 INFO	Starting bamliquidator_batch 1.4.0 with args {'bin_size': 100000, 'regions_file': '/data/projects/IRF4_mm_trn_data/p300_internal_ChIP/rose/02_0EWO_0229Kronos_MM1S-No-Treatment-2_H3K18Ac_hs-dm_i04_ROSE/gff/02_0EWO_0229Kronos_MM1S-No-Treatment-2_H3K18Ac_hs-dm_i04_peaks_6KB_STITCHED.gff', 'output_directory': '/data/projects/IRF4_mm_trn_data/p300_internal_ChIP/rose/02_0EWO_0229Kronos_MM1S-No-Treatment-2_H3K18Ac_hs-dm_i04_ROSE/mapped_gff/02_0EWO_0229Kronos_MM1S-No-Treatment-2_H3K18Ac_hs-dm_i04_peaks_6KB_STITCHED_02_0EWO_0229Kronos_MM1S-No-Treatment-2_H3K18Ac_hs-dm_i04.bam_MAPPED', 'counts_file': None, 'flatten': False, 'extension': 200, 'sense': '.', 'match_bamToGFF': True, 'region_format': None, 'skip_plot': False, 'black_list': ['chrUn', '_random', 'Zv9_', '_hap'], 'quiet': False, 'number_of_threads': 0, 'xml_timings': False, 'bam_file_path': '/data/projects/p300_internal_mm/02_0EWO_0229Kronos_MM1S-No-Treatment-2_H3K18Ac_hs-dm_i04.bam'}
+2024-07-17 20:00:59 INFO	Liquidating /data/projects/p300_internal_mm/02_0EWO_0229Kronos_MM1S-No-Treatment-2_H3K18Ac_hs-dm_i04.bam (file 1 of 1)
+2024-07-17 20:01:17 INFO	Liquidation completed: 17.971694 seconds
+2024-07-17 20:01:17 INFO	Normalizing
+2024-07-17 20:01:17 INFO	Post liquidation processing took 0.155441 seconds
+2024-07-17 20:01:17 INFO	Writing bamToGff style matrix.txt file
+2024-07-17 20:01:17 INFO	Writing matrix.txt took 0.108907 seconds
