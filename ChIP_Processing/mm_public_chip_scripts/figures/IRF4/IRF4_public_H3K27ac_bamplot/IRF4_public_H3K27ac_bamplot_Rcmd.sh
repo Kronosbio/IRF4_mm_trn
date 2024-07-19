@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+bamplot_plotter.R /home/ec2-user/IRF4_mm_trn/mm_public_chip_scripts/figures/IRF4/IRF4_public_H3K27ac_bamplot/IRF4_public_H3K27ac_bamplot_summary.txt /home/ec2-user/IRF4_mm_trn/mm_public_chip_scripts/figures/IRF4/IRF4_public_H3K27ac_bamplot_plots.pdf UNIFORM MERGE SINGLE_PAGE

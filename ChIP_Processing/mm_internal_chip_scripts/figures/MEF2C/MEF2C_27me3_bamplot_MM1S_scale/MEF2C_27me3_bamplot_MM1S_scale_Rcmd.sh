@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+bamplot_plotter.R /home/ec2-user/IRF4_mm_trn/mm_internal_chip_scripts/figures/MEF2C/MEF2C_27me3_bamplot_MM1S_scale/MEF2C_27me3_bamplot_MM1S_scale_summary.txt /home/ec2-user/IRF4_mm_trn/mm_internal_chip_scripts/figures/MEF2C/MEF2C_27me3_bamplot_MM1S_scale_plots.pdf UNIFORM MERGE SINGLE_PAGE
