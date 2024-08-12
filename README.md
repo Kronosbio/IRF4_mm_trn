@@ -1,4 +1,4 @@
-# IRF4_mm_trn
+# IRF4 Multiple Myeloma TRN
 Code relevant to 2024 MM TRN IRF4/p300 manuscript
 
 This repo contains code relevant for IRF4 MM TRN: 
