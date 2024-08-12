@@ -5,7 +5,7 @@ This repo contains code relevant for IRF4 MM TRN:
 
 The repo is organized as following:
 
--ChIP processing (primarily in python), includes notebooks related to processing ChIP data files with relevant tools (including EnhancerPromoter, ROSE2, etc.). Also contained are log outputs from various tools used. 
+-ChIP processing (primarily in python), includes notebooks related to processing ChIP data files with relevant tools (including EnhancerPromoter, ROSE2, etc.). Also contained are log outputs from various tools used. This folder contains scripts and data folders for the public data processed, as well as the data processed specifically for this paper. The data folders includes the various intermediate steps for the ChIP data used. 
 
 -ChIP data contains frequently referenced data within other notebooks. 
 
@@ -13,6 +13,6 @@ The repo is organized as following:
 
 -Public data includes data that was collected from public resources
 
--figure n contains code used to generated figures observed within the manuscript. Generally base figures were made and then aesthetics were updated within Adobe Illustrator for figure generation.
+-figure n contains code used to generated figures observed within the manuscript. Generally base figures were made and then aesthetics were updated within Adobe Illustrator for figure generation. Figures generated in R are in the correct directory structure. Bam plots generated in python, are put within their relevant figure folder, but paths should be directed torwards the original ChIP processing folder. 
 
 Some data is not included here (for example DepMap 22Q4 Chronos scores, or some of the MACS1.4 outputs) due to sizing being over the available sizing limits for github. 
