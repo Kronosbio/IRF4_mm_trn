@@ -15,4 +15,4 @@ The repo is organized as following:
 
 -figure n contains code used to generated figures observed within the manuscript. Generally base figures were made and then aesthetics were updated within Adobe Illustrator for figure generation.
 
-Some data is not included here (for example the DepMap 22Q4, or all of the MACS1.4 outputs) due to sizing being over the available sizing limits for github. 
+Some data is not included here (for example DepMap 22Q4 Chronos scores, or some of the MACS1.4 outputs) due to sizing being over the available sizing limits for github. 
