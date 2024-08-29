@@ -1,8 +1,6 @@
 # IRF4 Multiple Myeloma TRN
 Code relevant to 2024 MM TRN IRF4/p300 manuscript
 
-This repo contains code relevant for IRF4 MM TRN: 
-
 The repo is organized as following:
 
 -ChIP processing (primarily in python), includes notebooks related to processing ChIP data files with relevant tools (including EnhancerPromoter, ROSE2, etc.). Also contained are log outputs from various tools used. This folder contains scripts and data folders for the public data processed, as well as the data processed specifically for this paper. The data folders includes the various intermediate steps for the ChIP data used. 
