@@ -239,27 +239,25 @@ dat_temp_p <- dat %>% dplyr::select(GENE,
 dat_temp_p <- dat_temp_p %>% gather(background_p, p,-GENE)
 
 dat_temp$Time <- 0
-dat_temp$Time[dat_temp$background %in% c("Log2FC_PBMC_1Hr","Log2FC_KB528_1Hr","Log2FC_KB528_1Hr_L363","Log2FC_KB528_1Hr_RPMI8226")] <- "1 Hour"
-dat_temp$Time[dat_temp$background %in% c("Log2FC_PBMC_3Hr","Log2FC_KB528_3Hr","Log2FC_KB528_3Hr_L363","Log2FC_KB528_3Hr_RPMI8226")] <- "3 Hour"
-dat_temp$Time[dat_temp$background %in% c("Log2FC_PBMC_6Hr","Log2FC_KB528_6Hr","Log2FC_KB528_6Hr_L363","Log2FC_KB528_6Hr_RPMI8226")] <- "6 Hour"
-dat_temp$Time[dat_temp$background %in% c("Log2FC_PBMC_24Hr","Log2FC_KB528_24Hr","Log2FC_KB528_24Hr_L363","Log2FC_KB528_24Hr_RPMI8226")] <- "24 Hour"
+dat_temp$Time[dat_temp$background %in% c("Log2FC_PBMC_1Hr","Log2FC_KB528_1Hr","Log2FC_KB528_1Hr_RPMI8226")] <- "1 Hour"
+dat_temp$Time[dat_temp$background %in% c("Log2FC_PBMC_3Hr","Log2FC_KB528_3Hr","Log2FC_KB528_3Hr_RPMI8226")] <- "3 Hour"
+dat_temp$Time[dat_temp$background %in% c("Log2FC_PBMC_6Hr","Log2FC_KB528_6Hr","Log2FC_KB528_6Hr_RPMI8226")] <- "6 Hour"
+dat_temp$Time[dat_temp$background %in% c("Log2FC_PBMC_24Hr","Log2FC_KB528_24Hr","Log2FC_KB528_24Hr_RPMI8226")] <- "24 Hour"
 
 dat_temp_p$Time <- 0
-dat_temp_p$Time[dat_temp_p$background %in% c("p_PBMC_1Hr","p_KB528_1Hr","p_KB528_1Hr_L363","p_KB528_1Hr_RPMI8226")] <- "1 Hour"
-dat_temp_p$Time[dat_temp_p$background %in% c("p_PBMC_3Hr","p_KB528_3Hr","p_KB528_3Hr_L363","p_KB528_3Hr_RPMI8226")] <- "3 Hour"
-dat_temp_p$Time[dat_temp_p$background %in% c("p_PBMC_6Hr","p_KB528_6Hr","p_KB528_6Hr_L363","p_KB528_6Hr_RPMI8226")] <- "6 Hour"
-dat_temp_p$Time[dat_temp_p$background %in% c("p_PBMC_24Hr","p_KB528_24Hr","p_KB528_24Hr_L363","p_KB528_24Hr_RPMI8226")] <- "24 Hour"
+dat_temp_p$Time[dat_temp_p$background %in% c("p_PBMC_1Hr","p_KB528_1Hr","p_KB528_1Hr_RPMI8226")] <- "1 Hour"
+dat_temp_p$Time[dat_temp_p$background %in% c("p_PBMC_3Hr","p_KB528_3Hr","p_KB528_3Hr_RPMI8226")] <- "3 Hour"
+dat_temp_p$Time[dat_temp_p$background %in% c("p_PBMC_6Hr","p_KB528_6Hr","p_KB528_6Hr_RPMI8226")] <- "6 Hour"
+dat_temp_p$Time[dat_temp_p$background %in% c("p_PBMC_24Hr","p_KB528_24Hr","p_KB528_24Hr_RPMI8226")] <- "24 Hour"
 
 dat_temp$cell_type <- "Other"
 dat_temp$cell_type[dat_temp$background %in% c("Log2FC_PBMC_1Hr","Log2FC_PBMC_3Hr","Log2FC_PBMC_6Hr","Log2FC_PBMC_24Hr")] <- "PBMC"
 dat_temp$cell_type[dat_temp$background %in% c("Log2FC_KB528_1Hr","Log2FC_KB528_3Hr","Log2FC_KB528_6Hr","Log2FC_KB528_24Hr")] <- "MM1S"
-dat_temp$cell_type[dat_temp$background %in% c("Log2FC_KB528_1Hr_L363","Log2FC_KB528_3Hr_L363","Log2FC_KB528_6Hr_L363","Log2FC_KB528_24Hr_L363")] <- "L363"
 dat_temp$cell_type[dat_temp$background %in% c("Log2FC_KB528_1Hr_RPMI8226","Log2FC_KB528_3Hr_RPMI8226","Log2FC_KB528_6Hr_RPMI8226","Log2FC_KB528_24Hr_RPMI8226")] <- "RPMI8226"
 
 dat_temp_p$cell_type <- "Other"
 dat_temp_p$cell_type[dat_temp_p$background %in% c("p_PBMC_1Hr","p_PBMC_3Hr","p_PBMC_6Hr","p_PBMC_24Hr")] <- "PBMC"
 dat_temp_p$cell_type[dat_temp_p$background %in% c("p_KB528_1Hr","p_KB528_3Hr","p_KB528_6Hr","p_KB528_24Hr")] <- "MM1S"
-dat_temp_p$cell_type[dat_temp_p$background %in% c("p_KB528_1Hr_L363","p_KB528_3Hr_L363","p_KB528_6Hr_L363","p_KB528_24Hr_L363")] <- "L363"
 dat_temp_p$cell_type[dat_temp_p$background %in% c("p_KB528_1Hr_RPMI8226","p_KB528_3Hr_RPMI8226","p_KB528_6Hr_RPMI8226","p_KB528_24Hr_RPMI8226")] <- "RPMI8226"
 
 #### pathways are top 1000 irf4/p300 bound genes, common essential genes, and MM context dependencies
