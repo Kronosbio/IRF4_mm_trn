@@ -14,3 +14,5 @@ The repo is organized as following:
 -figure n contains code used to generated figures observed within the manuscript. Generally base figures were made and then aesthetics were updated within Adobe Illustrator for figure generation. Figures generated in R are in the correct directory structure. Bam plots generated in python, are put within their relevant figure folder, but paths should be directed torwards the original ChIP processing folder. 
 
 Some data is not included here (for example DepMap 22Q4 Chronos scores, or some of the MACS1.4 outputs) due to sizing being over the available sizing limits for github. 
+
+12/2024 edit - following reviews, additional APMS was added to the manuscript. I did not have time while at Kronos to update these to each figure n, but APMS related figures can be found in "AP_MS" folder
