@@ -46,7 +46,11 @@ IKZF3_genes <- IKZF3_sig %>% pull(Gene) %>% unique()
 
 gene_list <- list("IRF4" = IRF4_genes,"IKZF1" = IKZF1_genes,"IKZF3" = IKZF3_genes,"p300" = p300_genes)
 
+### interactome size stats were used for node sizing
+
 gene_nodes <- data.frame(gene = c("IRF4","IKZF1","IKZF3","p300"), sig_inter = c(length(IRF4_genes),length(IKZF1_genes),length(IKZF3_genes),length(p300_genes)), background = c(length(IRF4_bg_gene),length(IKZF1_bg_genes),length(IKZF3_bg_genes),length(p300_bg_gene)))
+
+### calculating edge strength
 
 compute_chi_square <- function(gene_list, background_set) {
   results <- data.frame(

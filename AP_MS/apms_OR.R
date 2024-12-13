@@ -65,6 +65,8 @@ IRF4_bg_gene <- IRF4_all %>% pull(Gene) %>% unique()
 IKZF1_bg_genes <- IKZF1_all %>% pull(Gene) %>% unique()
 IKZF3_bg_genes <- IKZF3_all %>% pull(Gene) %>% unique()
 
+### identifying background set of genes
+
 background_set <- c(p300_bg_gene,IRF4_bg_gene,IKZF1_bg_genes,IKZF3_bg_genes) %>% unique()
 
 IKZF1_genes <- IKZF1_sig %>% pull(Gene) %>% unique() 
@@ -146,6 +148,8 @@ ci_lowers <- c()
 ci_uppers <- c()
 pvals <- c()
 
+### calculating rate of which interactome hits mm context dependency
+
 for (gene in c("IRF4","IKZF1","IKZF3","EP300")){
   interactors_t_1 <- combined_interactors %>% filter(tf %in% c(gene),MM_dep == "sig_mm") %>% nrow()
   interactors_t_0 <- combined_interactors %>% filter(tf %in% c(gene),MM_dep != "sig_mm") %>% nrow()
@@ -199,6 +203,9 @@ p <- odds_df %>% ggplot(aes(y = gene, x = odds)) + geom_point(size = 10) +
 pdf("odds_ratio.pdf",height = 5, width = 10)
 p
 dev.off()
+
+
+### now generating statistics for chi-square 2x2 (used for venn diagram visualization)
 
 String_IRF4_MM <- String_ppi %>% filter(GENE1 == "IRF4",MM_dep == "sig_mm") %>% droplevels()
 String_EP300_MM <- String_ppi %>% filter(GENE1 == "EP300",MM_dep == "sig_mm") %>% droplevels()
